@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleDriveReplica", "GoogleDriveReplica\GoogleDriveReplica.csproj", "{693CC6FA-7015-456F-A5AE-CDC642432FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.Entities", "Drive.Entities\Drive.Entities.csproj", "{644B72A0-6774-4DE1-97EE-27B7E84AABD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.DAL", "Drive.DAL\Drive.DAL.csproj", "{71C65E99-7E72-4A3B-9253-F5DCA28B9AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drive.BAL", "Drive.BAL\Drive.BAL.csproj", "{BAD0052A-EFA6-48D9-9235-7FF4199AABFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{693CC6FA-7015-456F-A5AE-CDC642432FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693CC6FA-7015-456F-A5AE-CDC642432FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693CC6FA-7015-456F-A5AE-CDC642432FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693CC6FA-7015-456F-A5AE-CDC642432FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644B72A0-6774-4DE1-97EE-27B7E84AABD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644B72A0-6774-4DE1-97EE-27B7E84AABD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644B72A0-6774-4DE1-97EE-27B7E84AABD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644B72A0-6774-4DE1-97EE-27B7E84AABD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C65E99-7E72-4A3B-9253-F5DCA28B9AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C65E99-7E72-4A3B-9253-F5DCA28B9AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C65E99-7E72-4A3B-9253-F5DCA28B9AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C65E99-7E72-4A3B-9253-F5DCA28B9AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD0052A-EFA6-48D9-9235-7FF4199AABFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD0052A-EFA6-48D9-9235-7FF4199AABFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD0052A-EFA6-48D9-9235-7FF4199AABFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD0052A-EFA6-48D9-9235-7FF4199AABFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<table align="center" style="margin:100px 0px 0px 385px">
+    <tr>
+        <td>
+            <div class="login-page">
+                <div class="form">
+                    <form class="login-form" method="POST" action="@Url.Content("~/User/Login")">
+                        <h3><b>Login</b></h3>
+                        <input type="text" id="login" name="login" placeholder="username" value="@TempData["Login"]" />
+                        <input type="password" id="password" name="password" placeholder="password" />
+                        <br /><span style="color:red"> @TempData["Message"]</span> <br />
+                        <input style="background:black;color:white;cursor:progress;" id="btnlogin" name="btnlogin" type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+

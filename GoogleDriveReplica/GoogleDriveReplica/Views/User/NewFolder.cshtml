@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "New Folder";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+
+<table align="center" style="margin:100px 0px 0px 385px">
+    <tr>
+        <td>
+            <div class="login-page">
+                <div class="form">
+                    <form class="login-form" method="POST" action="@Url.Content("~/User/NewFolder")">
+                        <h3><b>New Folder</b></h3>
+                        <input type="text" id="name" name="name" placeholder="Folder Name" /> <br /><span style="color:red"> @TempData["Message"]</span> <br />
+                        <input style="background:black;color:white;cursor:progress;" id="btnCreateFolder" name="btnCreateFolder" type="submit" value="Create Folder">
+                    </form>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+
+

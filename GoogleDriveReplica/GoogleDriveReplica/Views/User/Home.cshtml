@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    if(Session["uname"] == null)
+    {
+        Response.Redirect("~/MainScreen/Login");
+    }
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Welcome @Session["name"]</h2>
+<hr />
+<h4 id ="mainPath"></h4>
+
+<input type="hidden" value="@Session["uid"]" id="uid" name="uid"/>
+<div id="clickPath">
+    <button id="-1" onclick="ShowMainScreen()" class="btn btn-default">Home > </button>
+</div>
+<hr />
+<input type="file" id="myfile" style="display:none">
+
+<div id="panel">
+    <div class="container">
+        <ul class="list-inline">
+            <li><button id="btnCreateFolder" class="btn btn-default">Create Folder</button></li>
+            <li><button id="btnDeleteFolder" class="btn btn-default">Delete Folder</button></li>
+            <li><button id="btnMetaData" class="btn btn-default">Download Meta Data</button></li>
+            <li><button id="btnUploadFile" class="btn btn-default">Upload File</button></li>
+        </ul>
+    </div>
+    <br>
+    <!-- Form for folder creation that is hidden by default -->
+    <div class="dialog" id="folderCreationForm" style="display: none; position: fixed; top:50px; left: 2px; width: 300px;">
+        <form>
+            <label id="popup-title" style="color:black">New Folder</label>
+            <div class="form-group">
+                <input type="text" id="foldername" class="form-control">
+            </div>
+            <div align="center" class="form-group">
+                <input type="button" class="btn btn-success " value="Create Folder" id="btnCreateOK">
+                <input type="button" class="btn btn-success " value="Cancel" id="btnFolderCancelOK">
+            </div>
+        </form>
+    </div>
+    <!-- Form for file selection that is hidden by default -->
+    <div class="dialog" id="fileSelectionForm" style="display: none; position: fixed; top:50px; left: 2px; width: 300px;">
+        <form>
+            <label id="popup-title" style="color:black">Select File</label>
+            <div class="form-group">
+                <input type="file" id="myfile" class="form-control">
+            </div>
+            <div align="center" class="form-group">
+                <input type="button" class="btn btn-success " value="Upload" id="btnFileOK">
+                <input type="button" class="btn btn-success " value="Cancel" id="btnFileCancelOK">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--For Folders-->
+<div id="container" class="cols box">
+
+</div>
+<hr />
+<!--For Files-->
+<div id="fileContainer" class="col box">
+    <table id="files" border="1" class="table alert">
+        
+    </table>
+</div>
+
+
